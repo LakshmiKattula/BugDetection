@@ -1,0 +1,75 @@
+Bug report processing, Analysis and Assignment
+Introduction:
+
+
+
+In any machine learning task, cleaning or preprocessing the data is as important as model building if not more. And when it comes to unstructured data like text, this process is even more important.
+Some of the common text preprocessing / cleaning steps are:
+•	Lower casing
+•	Removal of Punctuations
+•	Removal of Stopwords
+•	Removal of Frequent words
+•	Removal of Rare words
+•	Stemming
+•	Lemmatization
+•	Removal of emojis
+•	Removal of emoticons
+•	Conversion of emoticons to words
+•	Conversion of emojis to words
+•	Removal of URLs
+•	Removal of HTML tags
+•	Chat words conversion
+•	Spelling correction
+
+Text feature extraction and pre-processing for classification algorithms are very significant. In Natural Language Processing (NLP), most of the text and documents contain many words that are redundant for text classification, such as stopwords, mis-spellings, slangs, and etc. In many algorithms like statistical and probabilistic learning methods, noise and unnecessary features can negatively affect the overall performance. So, the elimination of these features is extremely important.
+Tokenization:
+Tokenization is the process of breaking down a stream of text into words, phrases, symbols, or any other meaningful elements called tokens.
+After sleeping for four hours, he decided to sleep for another four
+{'After', 'sleeping', 'for', 'four', 'hours', 'he', 'decided', 'to', 'sleep', 'for', 'another', 'four'}
+
+
+Notes:
+1.	https://www.kaggle.com/code/sudalairajkumar/getting-started-with-text-preprocessing
+2.	https://github.com/kk7nc/Text_Classification/blob/master/README.rst#id3
+3.	https://medium.com/text-classification-algorithms/text-classification-algorithms-a-survey-a215b7ab7e2d
+4.	https://medium.com/@rangavamsi5/na%C3%AFve-bayes-algorithm-implementation-from-scratch-in-python-7b2cc39268b9
+5.	https://monkeylearn.com/text-classification/
+6.
+Duplicate Bug Detection:
+1.	https://arxiv.org/pdf/2212.00548.pdf
+2.	https://github.com/thiagomarquesrocha/siameseQAT
+3.	https://www.researchgate.net/publication/344774539_Duplicate_Bug_Report_Detection_and_Classification_System_Based_on_Deep_Learning_Technique
+
+
+
+
+Bayes Vs SVM :
+Both are used for classification problems. For example, classifying an email spam or not.
+Naive Bayes is a linear classifier that can be used for linearly separable problems and when the features are independent (occurrence of a feature does not affect the occurrence of another feature). On the other hand, SVM provides options to become a linear classifier (with linear kernel) or a non-linear classifier (with RBF kernel) and works on the principle of maximizing the margin of a decision boundary
+The Naive Bayes family of statistical algorithms are some of the most used algorithms in text classification and text analysis, overall.
+
+One of the members of that family is Multinomial Naive Bayes (MNB) with a huge advantage, that you can get really good results even when your dataset isn’t very large (~ a couple of thousand tagged samples) and computational resources are scarce.
+
+Naive Bayes is based on Bayes’s Theorem, which helps us compute the conditional probabilities of the occurrence of two events, based on the probabilities of the occurrence of each individual event. So we’re calculating the probability of each tag for a given text, and then outputting the tag with the highest probability.
+
+Naive Bayes formula.
+1.	https://www.baeldung.com/cs/naive-bayes-vs-svm
+2.	https://www.analyticsvidhya.com/blog/2020/11/understanding-naive-bayes-svm-and-its-implementation-on-spam-sms/
+3.	https://monkeylearn.com/text-classification/
+4.	https://medium.com/@bedigunjit/simple-guide-to-text-classification-nlp-using-svm-and-naive-bayes-with-python-421db3a72d34 ---Imp
+5.
+
+
+
+
+NLTK vs spaCy
+Natural Language Toolkit (NLTK) is the largest natural language processing library that supports many languages. Let us compare NLTK and spaCy.
+
+S.No.	NLTK	spaCy
+1.	NLTK is primarily designed for research.	spaCy is designed for production use.
+2.	NLTK provides support for many languages.	Currently, spaCy provides trained pipelines for 23 languages and supports 66+ languages.
+3.	NLTK follows a string processing approach and has a modular architecture.	spaCy follows an object-oriented approach.
+4.	NLTK provides a large number of different NLP algorithms and hence is preferred for research and building innovative solutions. The user can select a particular algorithm from the available options for a particular task.	spaCy uses the best algorithm for a particular task. The user does not have to select an algorithm.
+5.	NLTK can be slower.	spaCy is optimized for speed.
+6.	It is built using Python.	It is built using Cython.
+
